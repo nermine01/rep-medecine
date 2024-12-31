@@ -1,0 +1,67 @@
+Reproductive Medicine Chatbot
+This repository contains the code for a Reproductive Medicine Chatbot, designed to answer questions related to reproductive medicine. The chatbot utilizes natural language processing (NLP) and machine learning models to retrieve and process information from a curated corpus of research documents.
+
+Project Overview
+The chatbot uses the FLAN-T5 model for question answering, leveraging the Hugging Face Transformers library for NLP tasks. It processes user queries and retrieves contextually relevant information from a set of research documents about reproductive medicine.
+
+Key Features:
+Question-Answering: The chatbot answers questions about reproductive medicine by using a pre-trained model.
+Document Retrieval: The system retrieves information from a corpus of documents using FAISS for efficient similarity search.
+Interactive: The chatbot allows users to interact by asking questions, with real-time responses based on the available data.
+Technologies Used
+Python: Programming language for the implementation.
+Hugging Face Transformers: Pre-trained models for NLP tasks.
+FAISS: A library for fast similarity search and retrieval of documents.
+LangChain: Tool for chaining multiple models and components.
+CUDA: Utilized for GPU acceleration if available, improving model performance.
+Installation
+To set up the project, follow these steps:
+
+1. Clone the Repository
+Clone this repository to your local machine:
+
+bash
+Copy code
+git clone https://github.com/nermine01/rep-medecine.git
+cd rep-medecine
+2. Install Dependencies
+Install the required Python packages. If a requirements.txt file is available, use:
+
+bash
+Copy code
+pip install -r requirements.txt
+Alternatively, install the necessary libraries manually:
+
+bash
+Copy code
+pip install transformers langchain faiss-cpu torch
+3. Prepare the Corpus
+Ensure your data is stored in a folder (e.g., data/) and consists of .json files with the relevant text from research articles or studies about reproductive medicine.
+
+Usage
+Running the Chatbot
+After setting up the environment, you can run the chatbot by interacting with it through a Jupyter notebook or similar interface. You can ask questions related to reproductive medicine, and the chatbot will return relevant answers based on the corpus it has processed.
+
+Example Queries:
+"What is reproductive medicine?"
+"What is sterility?"
+"Explain the process of IVF."
+The chatbot will provide real-time responses based on the context stored in the corpus.
+
+Exiting the Chatbot
+To exit the chatbot, type 'exit'.
+
+Contributing
+Contributions are welcome! If you would like to contribute to the project, follow these steps:
+
+Fork the repository.
+Create a new branch for your feature or bug fix.
+Commit your changes and push the branch to your fork.
+Create a pull request describing your changes.
+License
+This project is licensed under the MIT License. See the LICENSE file for more details.
+
+Acknowledgments
+Hugging Face: For providing powerful pre-trained models for NLP tasks.
+FAISS: For fast and efficient similarity search.
+LangChain: For chaining various models and components together to build powerful applications.
